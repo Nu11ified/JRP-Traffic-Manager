@@ -3,7 +3,7 @@ local activeTrafficManagerData = {}
 -- Register a command to activate the traffic manager.
 RegisterCommand('trafficmanager', function(source, args)
     local player = source
-    local permission = IsPlayerAceAllowed(player, 'traffic.manager')
+    local permission = IsPlayerAceAllowed(player, 'trafficmanager')
     if permission then
         TriggerClientEvent('trafficmanager:openMenu', player)
     else
